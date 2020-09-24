@@ -8,6 +8,7 @@
     "serve": "netlify-lambda serve functions/"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "netlify-lambda": "1.6.3"
   }
 }
