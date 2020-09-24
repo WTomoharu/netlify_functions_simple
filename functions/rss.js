@@ -3,6 +3,6 @@ exports.handler = async (event, context) => {
   const xml = await axios.get('https://rss.allabout.co.jp/aa/latest/ch/health/').then((res) => res.data )
   return {
     statusCode: 200,
-    body: xml
+    body: JSON.stringify(event)
   }
 }
