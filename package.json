@@ -8,6 +8,6 @@
     "serve": "netlify-lambda serve functions/"
   },
   "dependencies": {
-    "netlify-lambda": "^2.0.1"
+    "netlify-lambda": "1.6.3"
   }
 }
