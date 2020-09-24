@@ -1,8 +1,10 @@
+const getPage = require('./getPage.js')
+
 exports.handler = async (event, context) => {
-  const axios = require('axios')
-  const xml = await axios.get('https://rss.allabout.co.jp/aa/latest/ch/health/').then((res) => res.data )
+  const url = 'https://rss.allabout.co.jp/aa/latest/ch/health/'
+  const xml = await getPage(url)
   return {
     statusCode: 200,
-    body: JSON.stringify(event)
+    body: xml
   }
 }
