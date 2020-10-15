@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 exports.handler = async (event, context) => {
 
   const urls = (event.queryStringParameters.urls || "").split(",").filter(v => v)
