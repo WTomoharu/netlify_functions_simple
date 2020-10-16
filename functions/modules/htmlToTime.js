@@ -44,9 +44,8 @@ class Row {
   }
 }
 
-function main(jsonText) {
-  const jsonData = JSON.parse(jsonText)
-  const dom = new JSDOM(jsonData.pages[jsonData.urls[0]]).window.document
+function main(HTMLText) {
+  const dom = new JSDOM(HTMLText).window.document
   Dict = getDict(dom)
   const trs = Array.from(dom.querySelectorAll('.tblDiaDetail tr')).slice(1)
   const rows = trs.map(tr => new Row(tr))
