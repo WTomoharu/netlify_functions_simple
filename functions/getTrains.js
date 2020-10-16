@@ -1,5 +1,5 @@
 const axios = require('axios')
-const myModule = require('./modules/domStation.js')
+const myModule = require('./modules/domTrain.js')
 
 exports.handler = async (event, context) => {
   const urls = (event.queryStringParameters.urls || "").split(",").filter(v => v)
