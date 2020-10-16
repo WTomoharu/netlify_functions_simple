@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "canvas": "^2.6.1",
     "jsdom": "^16.4.0",
     "netlify-lambda": "1.6.3"
   }
