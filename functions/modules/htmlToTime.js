@@ -32,6 +32,7 @@ class Cell {
       li.querySelector(".trainFor").textContent : "無印"
     this.trainFor = Dict.trainFor[trainForKey]
 
+    this.trainNumber = li.querySelector("a").href.match(/(?<=train\/).+?(?=\/)/)
     this.url = li.querySelector("a").href
   }
 }
