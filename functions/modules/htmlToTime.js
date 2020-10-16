@@ -50,7 +50,7 @@ function main(HTMLText) {
   const trs = Array.from(dom.querySelectorAll('.tblDiaDetail tr')).slice(1)
   const rows = trs.map(tr => new Row(tr))
   const out = [].concat(...rows.map(row => row.cells))
-  return JSON.stringify(out)
+  return out
 }
 
 module.exports = main
